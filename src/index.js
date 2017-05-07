@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Route, hashHistory } from 'react-router'
+import { BrowserRouter as Router } from 'react-router-dom'
 import { createStore, applyMiddleware, compose } from 'redux';
 import logger from 'redux-logger'
 import { Provider } from 'react-redux';
 import reducer from './reducers';
 import thunk from 'redux-thunk';
 //import * as appActions from './actions';
+import Home from './screens/Home';
+import Users from './screens/Users';
 import App from './App';
 import './index.css';
 
@@ -19,6 +23,11 @@ const store = createStore(reducer, composeEnhancers(
 
 ReactDOM.render(
   <Provider store={store}>
-    <App />
+    <Router history={hashHistory}>
+    <App>
+      <Route exact path="/" component={Home} />
+      <Route path="/users" component={Users} />
+    </App>
+  </Router>
   </Provider>, document.getElementById('root')
 );

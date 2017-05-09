@@ -1,13 +1,13 @@
-import * as actions from './index'
+import * as actions from "./index";
 
-describe('actions', () => {
-  it('should create an action to load a task', () => {
+describe("actions", () => {
+  it("should create an action to load a task", () => {
     const expectedAction = {
-      type: 'LOAD_TASKS',
+      type: "LOAD_TASKS",
       tasks: []
-    }
+    };
 
     //Test with an empty array
-    expect(actions.loadTasks([])).toEqual(expectedAction)
-  })
-})
+    expect(actions.loadTasks([])).toEqual(expectedAction);
+  });
+});

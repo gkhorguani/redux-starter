@@ -7,8 +7,8 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <h1>Home page</h1>
-                <div>
+                <h1 className="custom-title">Home page</h1>
+                <div className="unorderedList">
                     <a href="#" onClick={(e) => this.props.actions.loadFakeData()}>Load fake data</a>
                     <br />
                     <a href="#" onClick={(e) => this.props.actions.doLogin()}>Login {this.props.loggedIn ? 'Yes' : 'NO'}</a>

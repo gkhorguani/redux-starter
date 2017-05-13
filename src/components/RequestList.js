@@ -8,8 +8,7 @@ class RequestList extends Component {
     super(props);
 
     this.state = {
-      formVisibleStart: false,
-      formVisibleEnd: false,
+      formVisible: true,
       editMode: false,
 
       id: "",

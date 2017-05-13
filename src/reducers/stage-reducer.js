@@ -1,7 +1,20 @@
 import shortid from "shortid";
 
 const initialState = {
-  StartStage: [],
+  StartStage: [
+    {
+      id: shortid(),
+      title: "Give me money",
+      author: "Scrooge McDuck",
+      date: "01/25/2015"
+    },
+    {
+      id: shortid(),
+      title: "Give me health",
+      author: "Doctor Octopus",
+      date: "11/13/1999"
+    }
+  ],
   EndStage: []
 };
 

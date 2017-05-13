@@ -1,10 +1,8 @@
 import { combineReducers } from "redux";
-import users from "./userReducer";
-import tasks from "./task-list-reducer";
+import stageReducer from "./stage-reducer";
 
 const rootReducer = combineReducers({
-  users,
-  tasks
+  stageReducer
 });
 
 export default rootReducer;

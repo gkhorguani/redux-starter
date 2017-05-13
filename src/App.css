@@ -22,3 +22,10 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.requestsTable { width: 900px; margin: 0 auto; }
+.requestForm { margin: 20px auto; }
+.list-table, .filterContainer, .errorMessage { margin: 10px auto; }
+.stagesContainer {
+  text-align: center;
+}

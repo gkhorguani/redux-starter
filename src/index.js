@@ -7,7 +7,6 @@ import logger from "redux-logger";
 import { Provider } from "react-redux";
 import reducer from "./reducers";
 import thunk from "redux-thunk";
-//import * as appActions from './actions';
 import Home from "./screens/Home";
 import Users from "./screens/Users";
 import App from "./App";
@@ -19,8 +18,6 @@ const store = createStore(
   reducer,
   composeEnhancers(applyMiddleware(thunk, logger))
 );
-
-//store.dispatch(appActions.loadFakeData())
 
 ReactDOM.render(
   <Provider store={store}>
